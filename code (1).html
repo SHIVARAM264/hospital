@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneMed Supply - Blood & Medicine Delivery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header>
+        <h1>DroneMed Supply</h1>
+        <p>24/7 Blood & Medicine Delivery via Drone</p>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Fast, Reliable Drone Deliveries</h1>
+            <p>Intercity, Home, and Hospital Services – Book Your Slot Now!</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section booking-form">
+            <h2>Book Your Delivery Slot</h2>
+            <form id="bookingForm">
+                <label for="serviceType">Service Type:</label>
+                <select id="serviceType" required>
+                    <option value="">Select</option>
+                    <option value="blood">Blood Supply</option>
+                    <option value="medicine">Medicine Delivery</option>
+                </select>
+
+                <label for="locationType">Delivery Location:</label>
+                <select id="locationType" required>
+                    <option value="">Select</option>
+                    <option value="intercity">Intercity</option>
+                    <option value="home">Home</option>
+                    <option value="hospital">Hospital</option>
+                </select>
+
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" placeholder="Enter address" required>
+
+                <label for="delivery">Delivery Location:</label>
+                <input type="text" id="delivery" placeholder="Enter address" required>
+
+                <label for="slot">Preferred Slot (24/7 Available):</label>
+                <select id="slot" required>
+                    <option value="">Select Time</option>
+                    <option value="now">ASAP</option>
+                    <option value="1h">Within 1 Hour</option>
+                    <option value="2h">Within 2 Hours</option>
+                    <option value="custom">Custom Time</option>
+                </select>
+
+                <label for="details">Additional Details (e.g., Blood Type, Medicine Name):</label>
+                <input type="text" id="details" placeholder="Optional">
+
+                <button type="submit">Book Slot</button>
+            </form>
+            <p id="confirmation" style="display: none; color: green; margin-top: 20px;">Booking confirmed! Drone dispatched. Tracking ID: DM12345</p>
+        </section>
+
+        <section class="section services">
+            <div class="service">
+                <h3>Blood Supply</h3>
+                <p>Emergency blood deliveries with temperature-controlled drones. Compatible with all types.</p>
+            </div>
+            <div class="service">
+                <h3>Medicine Delivery</h3>
+                <p>Prescription and over-the-counter meds delivered swiftly to your door or hospital.</p>
+            </div>
+            <div class="service">
+                <h3>Drone Technology</h3>
+                <p>Advanced drones ensure sterile, fast intercity transport. 24/7 monitoring for safety.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 DroneMed Supply. 24/7 Support: 1-800-DRONE-MED | Privacy Policy</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JS file -->
+</body>
+</html>
